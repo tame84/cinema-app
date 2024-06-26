@@ -1,0 +1,55 @@
+div {
+    .form-container {
+        margin-top: 40px;
+        padding: 0 20px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+
+        form {
+            width: 40%;
+            max-width: 500px;
+            min-width: 180px;
+            margin-bottom: 20px;
+
+            input[type="text"] {
+                border-radius: 20px;
+                border: none;
+                background: rgba($white, 10%);
+                padding: 0 10px;
+                height: 40px;
+                width: 100%;
+                outline: none;
+                color: $color1;
+            }
+        }
+        .filter-container {
+            background: $color1;
+            border-radius: 50px;
+            overflow: hidden;
+
+            button {
+                padding: 10px 12px;
+                background: none;
+                border: none;
+                color: $white;
+                cursor: pointer;
+
+                &:hover {
+                    background: rgba($black, 20%);
+                }
+            }
+        }
+    }
+    .movies {
+        padding: 0 120px;
+        margin-top: 20px;
+        display: flex;
+        justify-content: center;
+        align-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+}

@@ -1,0 +1,12 @@
+div {
+    .favorite-movies {
+        padding: 0 120px;
+        margin-top: 20px;
+        display: flex;
+        justify-content: center;
+        align-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+}

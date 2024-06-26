@@ -1,0 +1,29 @@
+nav {
+    height: 80px;
+    padding: 0 80px;
+    display: flex;
+    align-items: center;
+    border-bottom: solid 1px rgba($white, 10%);
+    background: $black;
+
+    ul {
+        display: flex;
+
+        li {
+            a {
+                padding: 10px 24px;
+                color: $white;
+                text-decoration: none;
+                border-radius: 50px;
+                transition: 0.05s ease-in;
+
+                &:visited {
+                    color: $white;
+                }
+                &:hover {
+                    background: rgba($white, 10%);
+                }
+            }
+        }
+    }
+}

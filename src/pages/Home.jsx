@@ -45,8 +45,10 @@ const Home = () => {
                         onChange={(e) => handleChange(e)}
                     />
                 </form>
-                <button onClick={() => setSortState("top")}>Top</button>
-                <button onClick={() => setSortState("flop")}>Flop</button>
+                <div className="filter-container">
+                    <button onClick={() => setSortState("top")}>Top</button>
+                    <button onClick={() => setSortState("flop")}>Flop</button>
+                </div>
             </div>
 
             <div className="movies">
@@ -63,7 +65,6 @@ const Home = () => {
                                 id={movie.id}
                                 img={movie.poster_path}
                                 title={movie.title}
-                                release={movie.release_date}
                                 notation={movie.vote_average}
                                 synopsis={movie.overview}
                             />

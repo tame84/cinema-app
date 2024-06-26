@@ -1,6 +1,6 @@
 import React from "react";
 
-const Movie = ({ id, img, title, release, notation, synopsis, favorite }) => {
+const Movie = ({ id, img, title, notation, synopsis, favorite }) => {
     const addFavorite = () => {
         if (window.localStorage.favoriteMovies) {
             const favoriteMovies =
@@ -45,7 +45,6 @@ const Movie = ({ id, img, title, release, notation, synopsis, favorite }) => {
             <h2>{title}</h2>
             <ul className="infos">
                 <li>{notation && notation.toFixed(1)}</li>
-                <li>{release && release}</li>
             </ul>
             <p className="synopsis">{synopsis}</p>
             {favorite ? (
